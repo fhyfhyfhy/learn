@@ -4,15 +4,21 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
+    "start:logger": "LOGGER_ENABLED=true react-native start --reset-cache",
+    "dev": "react-native bundle --dev",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@react-native-async-storage/async-storage": "^1.14.1",
     "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.8",
     "@react-navigation/native": "^5.9.2",
     "@react-navigation/stack": "^5.14.2",
+    "axios": "^0.21.1",
     "mobx": "^6.1.5",
     "mobx-react": "^7.1.0",
     "react": "16.13.1",
@@ -20,7 +26,10 @@
     "react-native-gesture-handler": "^1.9.0",
     "react-native-reanimated": "^1.13.2",
     "react-native-safe-area-context": "^3.1.9",
-    "react-native-screens": "^2.17.1"
+    "react-native-screens": "^2.17.1",
+    "react-native-svg": "^12.1.0",
+    "react-native-svg-uri": "^1.2.3",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
